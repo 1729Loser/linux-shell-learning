@@ -15,3 +15,5 @@ but i guarantee you, they don't betray you.
 klaibyaṁ mā sma gamaḥ pārtha naitat tvayyupapadyate |
 kṣhudraṁ hṛidaya-daurbalyaṁ tyaktvottiṣhṭha parantapa ||
 O Parth, it does not befit you to yield to this unmanliness. Give up such petty weakness of heart and arise, O vanquisher of enemies.
+
+
