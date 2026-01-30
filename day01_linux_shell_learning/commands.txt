@@ -1,0 +1,14 @@
+pwd ==> print working directory
+
+cd ==> change directory
+cd . ==> present directory
+cd .. ==>  go to parent directory of the present directory
+cd ~ ==> root directory nothing but user home directory
+cd - ==> goes to the previous directory,
+
+ls ==> list the files and directories of the present working directories and also we can find the list files & directories of different directories by giving the path.
+ls -l ==> displays in long format, such as permissions, owner, group, size, and modification date.
+ls -a ==> displays hidden files and directories
+ls -la ==> displays hidden files and directories in long format.
+ls -lh ==> displays the file & directories sizes in human readale format such as kbs, mbs, gbs etc instead of bytes.
+ls -lah ==> displays the file & directories sizes in human readale format such as kbs, mbs, gbs etc instead of bytes including hidden files.
