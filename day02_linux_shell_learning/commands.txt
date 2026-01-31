@@ -4,7 +4,7 @@ touch -d "2025-01-02 12:00:00" f3 ==> it is used to change/update the timestamp 
 touch -t 202501022359 f3 ==> it also used to change/update the timestamp of f3 but without string format
 
 file ==> to find the type of file of the file 
-file -b ==> it tell about the type of the file, such as ASCII text, Bourne again shell script ASCII text excutable, POSIX tar archive, empty etc...
+file -b ==> it tell about the type of the file, such as ASCII text, Bourne again shell script ASCII text excutable, POSIX tar archive, empty etc..
 file -t ==> it tell about the type and category of the file, like text/plain , image/jpeg , video/mp4 , application/pdf etc..
 file -f ==> it reads a list of filenames from a given file and tells/determine the file type of each file. 
 
