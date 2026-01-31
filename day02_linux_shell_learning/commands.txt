@@ -1,0 +1,23 @@
+touch ==> create a new file if it doesn't exist otherwise it updates the access and modification timestamps of it
+touch -r f1 f2 ==> taking reference from f1 timestamp the f2 timestamp will change to f1's timestamp
+touch -d "2025-01-02 12:00:00" f3 ==> it is used to change/update the timestamp of f3 in string format
+touch -t 202501022359 f3 ==> it also used to change/update the timestamp of f3 but without string format
+
+file ==> to find the type of file of the file 
+file -b ==> it tell about the type of the file, such as ASCII text, Bourne again shell script ASCII text excutable, POSIX tar archive, empty etc...
+file -t ==> it tell about the type and category of the file, like text/plain , image/jpeg , video/mp4 , application/pdf etc..
+file -f ==> it reads a list of filenames from a given file and tells/determine the file type of each file. 
+
+cat ==> reads and displays the contents of given particular file in terminal
+cat f1 f2 ==> displays both the contents of the given files one after another 
+cat > f3 ==> creates a new file and we can able to write in that file
+
+less ==> displays file contents one screen at a time, we can able to scroll with pageup, pagedown, g, shift+g 
+  /search_part ==> searches forward for "search_part"
+  ?search_part ==> searches backward for "search_part"
+  n ==> jumps to the next occurence of the "search_part"
+  N ==> jumps to the previous occurence.
+
+history ==> displays the list of commands we used in terminal
+history -c ==> clears all the list of commands in history of current session
+history -d ==> we can delete a particular command which is present in the history list with help of it's key function.
