@@ -1,1 +1,44 @@
+cp (copy) ==> copying files & directories to a given destination lication
+  there are some wild cards for bulk copying
+      * ==> matches any sequence of characters
+      ? ==> matches any single character
+      [] ==> matches any one of the characters enclosed in brackets
+cp *.jpg /home/fun/pictures ==> (copying all the jpg images from current directory to pictures directory
+cp -r ==> it is used to copy directories along with it's subdirectories
+cp -i ==> it is used to take permission while overwriting a file 
+cp -f ==> used to overwrite without any permission
+cp -p ==> used to keep mode, ownership and timestamps as it is while copying
+
+
+mv (move) ==> used for renaming files and directories and also moving file and directories to another defined location.
+          at a time we can move 2 and more files and directories
+mv -t ==> it is used when more number of files are there to move then it is used to first mention the destination location and then the files which we want to move
+   mv -t /home/fun/doc f1 f2 f3 f4 
+mv -i ==> same as copy flag
+mv -b ==> while overwriting if we want to keep old version. this flag is used to backup and renamed with a tilde (~) suffix
+mv -v ==> what does the the command mv doing either renaming or moving
+mv -n ==> used to move without overwriting
+
+
+mkdir ==> used to create directories
+          at a time we can create 2 or more directories
+mkdir -p ==> it is used to create nested directories 
+mkdir -m ==> used to change/update the directory modes with umask
+
+
+rm (remove) ==> used to delete a files and directories
+rm -i ==> asks for permission before deleting a file or dirctory
+rm -f ==> deletes forcefully without asking permission even the file is write-protected
+rm -r ==> used to delete a directory and it's content also like files, subdirectories
+rm -d or rmdir ==> used to delete a empty directory
+
+
+
+
+
+
+
+
+
+
 
