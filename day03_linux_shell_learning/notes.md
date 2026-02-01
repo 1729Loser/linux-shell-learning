@@ -20,7 +20,6 @@ output ==> # it replicates it's all content and it's metadata from original one
 
 
 
-
 mv oldfilename newfilename #renaming oldfilename to newfilename
 mv file /xdirectory #moving file to the xdirectory
 mv file1 file2 /ydirectory #at a time moving file1 & file2 to the ydirectory 
