@@ -1,0 +1,38 @@
+  find ==> it is used to find file or directory 
+find /home abc.txt ==> /home searching directory abc.txt is file 
+to make more easier use flags such as 
+  -type and -name ==> #where -type tells is it directory(d) or file(f) and -name specifies exact name of it
+find /home -type f -name abc.sh 
+
+
+  
+  help ==> it helps user to know about the command 
+for bash shell built in commands ==> help echo ; help cd etc..
+  for other commands ==> ls --help ; find --help etc..
+
+
+  man ==> full detailed documentation of a command or it shows instruction manual of a command nothing but manual pages.
+man find ==> it opens it's manual pages 
+  when we add "-f" flag to it
+man -f find ==> it acts as whatis command which gives one line description of that command
+
+
+whatis man ==> gives one line description of that command from man.
+
+
+  
+alias ==> it is used to define custom commands to a command or sequence of commands
+for temporary, it means the aliases works only for this session
+alias ll='ls -la'
+
+for permanent,
+  1. first find which shell script uses your terminal. by typing  echo "$shell"
+  2. for bash open ~/.bashrc file and for Zsh open ~/.zshrc in a text editor like ( nano ~/.bashrc)
+  3. go to bottom and add your alias 
+  4. save the file and exit
+  5. close the terminal and reopen or run this command ( source ~/.bashrc )
+
+
+
+exit ==> for ending a shell session 
+logout ==> same as exit but it is specially designed to terminating a login shell.
