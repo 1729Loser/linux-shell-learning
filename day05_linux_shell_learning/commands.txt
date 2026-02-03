@@ -1,0 +1,28 @@
+stdout (standard output ) ==> it is default standard output stream where commands send there results to it. where it displays in our terminal.
+  redirecting stdout with > ==> it is used to send data to new destination rather than the old one stdout.
+    echo hello_hackers > anyfile.txt
+    but this thing overwrite the contents of the anyfile.txt 
+    to overcome this we use ">>"
+  appending stdout with >> ==> it appends the stdout at endofthe specified file
+    echo bye_hackers >> anyfile.txt
+
+
+stdin (standard input) ==> it is default standard input stream. where input recieves from keyboard.
+  redirecting stdin with <> ==> it is used to take inputs from specified files or directories etc.
+    cat < abc.txt > xy.txt ==> here xy.txt takes stdin from the stdout of abc.txt
+
+
+stderr (standard error) ==> it is default standard error stream. where errors are shown in terminal
+  redirecting stderr with 2> ==> it is used to redirect the stderr to another file
+  ls /fake/directory 2> def.txt 
+
+we can send stdout and stderr to the same specified file using 2, &, > and 1 operators
+  ls /fake/directory > def.txt 2>&1  or modern version ls /fake/directory &> def.txt
+if noneed to display stderr then use this ls /fake/directory 2> /dev/null
+
+
+
+| (pipe) and tee ==> 
+        | (pipe) ==> pipe acts as standard i/o stream . 
+        tee ==> when we use pipe then tee is used to display the stdout in terminal as well as it saves that stdout in a specified file
+  ls -la /etc | tee etcfile.txt ==> the stdout of /etc is displays in terminal and also saved in etcfile.txt with the help of "tee" command
