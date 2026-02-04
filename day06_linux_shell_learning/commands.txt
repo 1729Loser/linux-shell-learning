@@ -1,0 +1,43 @@
+# env (environment) ==> the env variables stores the useful data about our session and system configuration. the shell and other processes can access this data.
+  env ==> this command displays all the key pair values ( variables and its values)
+  echo $USER ==> $USER is the env variable, echo helps to show the env variable value of USER
+#  we can set env var for current session
+  1. export TEST=test ==> TEST is the env vari and test is it's value 
+
+# we can also set env var for all sessions / permanent
+    1. nano ~/.bashrc ==> for bash shell
+    2. export ENV_VARIABlE=value ==> set a env variable and it's value
+    3. save and exit
+    4. source ~/.bashrc ==> type this command or close terminal and reopen.
+    5. that's it.
+
+
+
+# cut ==> it extracts portions of text from a file.
+    -c ==> this flag is used for extrating content with help of character position
+      # cut -c 5 sample.txt ==> it extract the character which is at the 5 position in sample.txt
+    -f ==> this flag is used for extrating content with help of fields which were created by default delimiter ( TAB space).
+      # cut -f 2 sample.txt ==> it extract the 2 field of the sample.txt
+    -d ==> this flag is used for defining our own delimiter rather than deafault.
+      # cut -d ';' -f 1 sample.txt ==> where ever defined delimiter ';' is present it divides the line nothing but makes different fields and than with -f flag mentioned field will be displayed on terminal, here mentioned field is 1.
+
+
+# paste ==> this is similar to cat, this merges lines together in files
+   "-s" flag ==>  paste -s sample2.txt ==> it mergers the all the lines into one line. with default delimiter ( TAB space)
+    paste -d ' ' -s sample2.txt ==> mergers into one line with defines delimiter ( ' ' space )
+
+
+# head ==> it dispays first 10 lines of any given file
+    -n ==> it uses to display how many lines user want to display on terminal
+        head -n 30 /var/log/README
+    -c ==> it displays how many charcters user want to display on terminal
+        head -c 100 /var/log/README
+
+
+# tail ==> it is exactly opposite of head
+    tail -n 20 /var/log/README ==> displays last 20 lines
+    tail -c 100 /var/log/README ==> displays last 100 characters
+    -f flag ==> it not only displays last 10 lines but also it waits for new data to be appended to the file. and than prints it on the screen as it arrives. it is useful for view logs and monitor files.
+      tail -f /var/log/syslog
+
+    
