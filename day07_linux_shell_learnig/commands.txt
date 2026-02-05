@@ -1,0 +1,27 @@
+# expand => it is used to mostly formating the text in files. it replaces tab characters with space characters to improve consistency and alignment of text.
+    expand sample.txt ==> is any tab characters are present than it replace with space characters.
+    exapnd sample.txt > result.txt ==> we can save that output in another file
+    expand -t 3 sample.txt ==> where we can tell to it each tab to how many spaces instead of 8spaces, here i given only 3 spaces are enough.
+# unexpand ==> it is opposite of expand.
+      unexpand sample.txt ==> replace space characters with tab characters.
+      unexpand -t 4 sample.txt ==> exact opposite of expand -t command.
+
+
+# join ==> it is used to join two files based on one identical field.
+      join file1.txt file2.txt ==> 2 files are joined with one common field which is present in first column of both the files.
+      join -1 2 -2 3 file1.txt file2.txt ==> here common field is for both the files are present at different columns. for file1 is 2 column and for file2 is 3 column.
+# split ==> it is exact opposite of join, it splits large file into small files.
+      split file3.txt
+
+
+# sort ==> it is used to sort the lines of files. it may be based on alphabetical, numerical and reverse etc.
+      sort file.txt ==> here the file is sorted in alphabetical order.
+      sort -r file.txt ==> sorted in reverse order of alphabetical order.
+      sort -n file.txt ==> sorted according to numerical value.
+
+
+# tr (translate) ==> it is used to mostly for text manipulation. such as small -> capital , removing some chars, squeeZing repeated characters etc..
+    echo "hello hackers" | tr a-z A-Z ==> here all the small letters are translated into capital letters "HELLO HACKERS"
+    echo "my age is 21" | tr -d '0-9' ==> here the numerical values are get deleted with the help of "-d" flag. so output is " my age is "
+    echo "hello     hackers.    how    are    you    guys?" | tr -s ' ' ==> here with the help of "-s" flag the multiple spaces are replaced with single space.
+    
