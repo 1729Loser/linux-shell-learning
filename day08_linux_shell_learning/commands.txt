@@ -8,6 +8,7 @@
                               so to reduce that complict we use 'sort' command. i will provide any example in notes.md .
 
 
+
 # wc and nl ==> 
       wc (word count) ==> powerful tool for basic file analysis. it gives the summary of file content.
         wc /etc/passwd ==> input command
@@ -17,6 +18,7 @@
         wc -c /etc/passwd ==> prints only the byte count
       nl (numbering lines) ==> it adds numbers to lines in the file
         nl file.txt ==> it adds 1,2,3 etc numbers to the lines in the file.
+
 
 
 # grep ==> it is most essential text-processing tool in linux environment.
