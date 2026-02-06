@@ -1,0 +1,31 @@
+# uniq ==> it is used for text processing such as filtering and managing duplicate lines within a file.
+    uniq read.txt ==> it removes repeated lines and prints only line for repeated lines
+    uniq -c read.txt ==> '-c' flag is used to count how many times did the line is repeated. 
+    uniq -u read.txt ==> '-u' flag is used to print only not repeated lines.
+    uniq -d read.txt ==> '-d' flag is used to print the duplicate lines.
+    uniq -i read.txt ==> '-i' flag is used to ignore case sensitive.
+    sort read.txt | uniq ==> it is used when 1st and 3rd are same it means if there is one line gap between repeated lines but it will not show any uniq lines it displays all the lines.
+                              so to reduce that complict we use 'sort' command. i will provide any example in notes.md .
+
+
+# wc and nl ==> 
+      wc (word count) ==> powerful tool for basic file analysis. it gives the summary of file content.
+        wc /etc/passwd ==> input command
+        96 354 23242 /etc/passwd ==> 1st field tells about no of lines, 2nd field about no of words count and last about no of bytes count
+        wc -l /etc/passwd ==> prints only the line count
+        wc -w /etc/passwd ==> prints only the word count
+        wc -c /etc/passwd ==> prints only the byte count
+      nl (numbering lines) ==> it adds numbers to lines in the file
+        nl file.txt ==> it adds 1,2,3 etc numbers to the lines in the file.
+
+
+# grep ==> it is most essential text-processing tool in linux environment.
+      grep jai simple.txt ==> find all words containing jai word in specified file
+      grep -e '-v' /path/some/file.config ==> '-e' flag is tells that next argument is pattern and it ensures that pattern is always interpreted correctly.
+      grep -i jai sample.txt ==> it ignores case sensitivity. it searches for patterns like Jai, jAi, jaI etc
+      grep -c jai sample.txt ==> it counts matching lines.
+      grep -o jai sample.txt ==> shows only exact part of the line that matches the pattern.
+      grep -f simple.txt sample.txt ==> it searches for patterns from mentioned file
+    combing grep with other commands with the help of pipe( | ) can unlock it's true power.
+        env | grep -i user ==> it searches the user in env
+        ls /somedir | grep '.txt' ==> it searches the .txt extension files in /somedir directory
