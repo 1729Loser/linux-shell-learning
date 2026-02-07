@@ -1,0 +1,26 @@
+# regex ( regular expressions ) ==> powerful tool for pattern based text selection.
+    cat read.txt | grep ^by ==> caret '^' symbol matches the begining of a line which starts with "by" in read.txt file
+    cat read.txt | grep ore$ ==> dollar '$' symbol matches the end of a line which ends with "ore" in read.txt file
+    cat read.txt | grep sa. ==. the period '.' is a wildcard that matches any single character. it would be saa,sab, sac etc...
+    cat read.txt | grep s[ae]es ==> brackets allow us to specify set of characters to match.
+    cat read.txt | grep s[^e]e ==> caret '^' negates the set, matching any character except those listed in brackets.
+    cat read.txt | grep s[a-f]e ==> it matches with the every character which is in between the given range, like sae,sbe,sce,sde,sfe.
+
+
+
+# text editors ==> vim and emacs are very populat text editors that are installed by default on most linux distributions. if not than install it.
+
+# vim ( vi improved ) ==> powerful and highly configurable text editor built to enable efficient text editing.
+    vim file.txt ==> it opens the vim text editor for file.txt file to insert or append or delelte or to make any changes etc..
+    vim search patterns ==> search a term with in vim editor.
+        1. first press Esc ==> to return normal mode 
+        2. /search_term ==> vim jump to the first occurence of the term after our cursor. it is known as forward search.
+        3. ?search_term ==> vim will find the first occurence before our cursor.
+    navigating search results ==> 
+          1. press 'n' ==> jump to the next match.
+          2. press 'N' ==> jump to the previous match
+    vim navigation ==> keys used to navigate text document in vim.
+          1. h or left arrow ==> will move you left one character.
+          1. j or down arrow ==> will move you down one line.
+          1. k or up arrow ==> will move you up one line.
+          1. l or right arrow ==> will move you right one character.
