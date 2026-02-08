@@ -1,0 +1,28 @@
+# vim has 2 modes 
+    1. normal mode for executing commands
+    2. insert mode for typing text
+# type Esc to change modes.
+
+# vim inserting and appending text : 
+      i ==> insert text before the current cursor position
+      a ==> append text after the current cursor position
+      I ==> insert text at the begining of the current line
+      A ==> append text at the end of the current line
+# adding new line :
+      o ==> open new line below the current line and enter insert mode
+      O ==> open new line above the current line and enter insert mode
+# deleting text in vim :
+      x ==> deletes the character directly under cursor
+      dw ==> deletes from the cursor to the begining of the next word
+      d$ ==> deletes from the cursot to the end of the current line
+      dd ==> deletes the entire current line
+      3dd ==> deletes three lines, starting from the current line
+# chaging text in vim :
+      cw ==> changes the text from the cursor to the end of the word
+      c$ ==> changes the text from the cursor to the end of the line
+      cc ==> changes the entire current line
+# copying ( yanking (y) ) and pasting ( putting ( p ) ) in vim :
+      yw ==> yanks ( copies ) a word 
+      yy ==> yanks the entire current line
+      p ==> puts ( pastes ) the yanked text after the cursor or on the line below
+      P ==> puts the text before the cursor or on the line above
