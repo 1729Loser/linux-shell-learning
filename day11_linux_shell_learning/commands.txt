@@ -1,0 +1,24 @@
+# some useful editing commands in vim
+    R ==> enters place mode, allowing you to overwrite text continuosly until you press 'Esc'
+    J ==> joins the current line with the next one
+    d} ==> deletes to the next paragraph
+    caw ==> changes a word
+
+
+# saving and exiting in vim
+    :w ==> saves the current state of the file to disk without exiting.
+    :q ==> quits the editor, it work's only if you have no unsaved changes.
+    :q! ==> quits the editor and discords any unsaved changes.
+    :wq ==> first it saves the file and than exit
+    :zz ==> it is shortcut and same (equivalent) to :wq
+
+
+# emacs ==> powerful text editor, where you can do all your code editing, file manipulation etc..
+      C ==> it means Ctrl key
+      M ==> it means meta key nothing but Alt key
+# opening a file in emacs :
+      C-x C-f ==> it opens a file, if it doesnot exist than it creates new file
+# saving a file in emacs :
+      C-x C-s ==> save a file
+      C-x C-w ==> sav file as
+      C-x s ==> save all
