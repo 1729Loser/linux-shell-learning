@@ -1,0 +1,22 @@
+# buffer ==> a temporary workspace where you can edit text in Emacs text editor.
+    C-x b ==> switch to another buffer by name
+    C-x right arrow ==> cycle to the next buffer
+    C-x left arrow ==> cycle to the previous buffer
+# managing buffer windows ==> allows you to view multiple buffers at once by splitting your screen.
+    C-x 2 ==> split the current window 
+    C-x 0 ==> move to the other window
+    C-x 1 ==> close all other windows
+    C-x k ==> kill ( close) the current buffer
+# text manipulation in Emacs :
+    C-up arrow ==> move up one paragraph
+    C-down arrow ==> move down one paragraph
+    C-left arrow ==> move one word left
+    C-right arrow ==> move one word right
+# cutting ( killing ) and pasting ( yanking ) :
+    C-w ==> kill ( cut ) the selected region
+    c-y ==> yank ( paste ) the selected region
+# Emacs exiting and help:
+    C-x C-c ==> close out of Emacs
+    C-x C-h, C-h C-q, C-h ?, C-h C-h etc.... ==> and several commands are disply help menu.
+    C-x u ==> undo
+    
