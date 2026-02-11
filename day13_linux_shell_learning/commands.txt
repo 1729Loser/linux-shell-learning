@@ -1,0 +1,15 @@
+# sudo ==> superuser do. he/she has unlimited power, capable of accessing anyfile and managing any process.
+# su ==> substitute user.
+# the sudoers file :
+    /etc/sudoers ==>  This file lists the users and groups. who are granted permission to run commands as the superuser.
+
+# /etc/passwd ==> This file displays a list of all system users and detailed information about them. Each line represents a single user account.
+        root:x:0:0:root:/root:/bin/bash
+        1. username
+        2. passwd ==> ( x means encrypted, * means account is locked and blank field means user doesn't have passwd )
+        3. UID ==> The unique numerical identifier for the user.
+        4. GID ==> The numerical identifier for the user's primary group.
+        5. GECOS Field ==> A comment field that traditionally holds extra information. It is comma-delimited.
+        6. Home Directory ==> The absolute path to the user's home directory (e.g., /root).
+        7. Default Shell ==> The user's default command-line interpreter, which is executed upon login (e.g., /bin/bash).
+
