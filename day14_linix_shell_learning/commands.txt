@@ -1,0 +1,30 @@
+# /etc/shadow ==> critical component in linux systems for storing sensitive user authentication infromation.
+                  it requires superuser privileges to access.
+#  viewing the file with cat /etc/shadow ==>
+      sudo cat /etc/shadow
+      root:Mtsdr@3323dsfse*4%$(&#dsfd:15000:0:99999:7:::
+      1. username
+      2. encrypted password ==> hashed password, * or x has means account is locked
+      3. date of last password change
+      4. minimum passwd age ==> the min no of days that must pass before the user can change their passwd again.
+      5. maximum passwd age ==> the max no of days the passwd is valid after this period the user must change it.
+      6. passwd inactivity period ==> the no of days before the passwd expires that the user will receive a warning message.
+      7. password inactivity period ==> the no of days after a passwd expires that the account is disabled.
+      8. account expiration date ==> an absolute date, expressd as days since january 1 1970, when the user account will be disabled
+      9. this field is reserved for future use.
+
+# /etc/group ==> contains the list of all user groups, passwds, group id's and list of users
+        cat /etc/group ==> viewing group information
+        root:*:0:peter
+        1. group name
+        2. group passwd
+        3. group id
+        4. list of users 
+
+# user management tools 
+    # useradd ==> to create a new user
+      sudo useradd arjuna
+    # userdel ==> to remove user
+      sudo userdel arjuna
+    # passwd ==> to ser new and also for change the passwd of user
+      passwd mighty_warrior
