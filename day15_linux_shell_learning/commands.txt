@@ -1,0 +1,45 @@
+# file permissions ==> essential skill in linux systems
+    r ==> read permission
+    w ==> write permission
+    x ==> execute permission
+    - ==> no permission granted
+   # example :-
+        ls -l Desktop/
+        drwxr-xr-x 2 arjun arjun 4096 dec 2 00:01
+        d ==> directory
+        rwx ==> this set applies to owner of the file. who has full permissions
+        r-x ==> this set applies to group associate with the file. who has only read and executable permissions
+        r-x ==> this set applies to all other users on the system. who has only read and executable permissions
+
+  # modifying permissions ==> chmod command is used to modify the permissions
+      chmod offers 2 methods
+      1. using symbolic mode ==>
+          u ==> user/owner, g ==> group, o ==> others, a ==> all, + ==> add permissions, - ==> remove permissions.
+          chmod u+x myfile
+          chmod g-w myfile
+          chmod a+x myfile
+          chmod o-w myfile
+      2. using numerical(octal) mode ==>
+          4 ==> read(r), 2==> write(w), 1 ==> execute(x)
+          chmod 754 myfile
+          7 ==> all permissions to owner/user
+          5 ==> only read and executable permissions for groups associated with myfile
+          4 ==> only read permissions to all others in the system.
+
+
+
+# ownership permission ==> fundamental task for controlling access and permissions
+      # changing user ownership ==> transfering ownership with help of sudo command
+          sudo chown para myfile
+      # changing group ownership ==> sudo chgrp aadhi myfile
+      # changing both user and group ownership ==> sudo chown para:aadhi myfile
+
+
+# umask ==> used to change the default set of permissions.
+    default permission is "umask 022"
+      0 ==> full permissions to owner
+      2 ==> all permissions except write for groups
+      2 ==> all permissions except write for all others
+      new ==> umask 021
+      1 ==> all permissions except execute for all others 
+      
