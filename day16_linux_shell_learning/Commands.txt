@@ -1,0 +1,12 @@
+# SUID (set user id ) ==> it allows a user to run a program as the owner of the program file rather than as themselves.
+  modifying SUID ==>  Just like regular permissions, there are two ways to modify SUID permissions.
+    sudo chmod u+s myfile ==> symbolic way
+    sudo chmod 4755 myfile ==> numerical way
+    here "s" is the SUID permission in symbolic way
+    and "4" is the SUID permission in numerical way
+
+# SGID ( set group id ) ==> similar to SUID. This bit allows a program to run as if it were a member of that group.
+   modifying SGID ==>
+          sudo chmod g+s myfile
+          sudo chmod 2555 myfile
+    
